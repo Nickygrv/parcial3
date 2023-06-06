@@ -1,0 +1,198 @@
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="productos.component.css">
+  <style>
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      font-size: 12px;
+      background-color: red;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 50%;
+    }
+  </style>
+  <script>
+    var clickCount = 0;
+    
+    function addToCart() {
+      clickCount++;
+      var cartButton = document.getElementById('cartButton');
+      var badge = document.createElement('span');
+      badge.setAttribute('class', 'badge');
+      badge.innerHTML = clickCount.toString();
+      cartButton.appendChild(badge);
+    }
+  </script>>
+</head>
+    <body>
+       
+        <div class="contenedor-pasteles">
+
+            <h1 class="titulo-productos">ALGUNOS DE NUESTROS PRODUCTOS</h1>
+
+           <div class="fila">
+            <div class="row">
+                <div class="col-sm-20 col-md-15">
+                  <div class="thumbnail">
+                    <img src="https://www.ketal.com.bo/image/cache/catalog/product/80203311-550x550.jpg" class="img-circle">
+                    <div class="caption">
+                      <h3>Alicate</h3>
+                      <p>70 Bs.</p>
+                      <p>
+                        <a href="#" class="btn btn-primary" role="button" onclick="addToCart()">Añadir al Carrito</a>
+                        <button id="cartButton">Carrito</button> 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-sm-20 col-md-15">
+                  <div class="thumbnail">
+                    <img src="https://cdn.shopify.com/s/files/1/0446/2044/7893/products/Cinta-metrica-Komelon-5m_800x.jpg?v=1597854638" alt="...">
+                    <div class="caption">
+                      <h3>Cinta Metrica</h3>
+                      <p>55 Bs.</p>
+                      <p>
+                        <a href="#" class="btn btn-primary" role="button">Añadir al carrito</a>
+                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-20 col-md-15">
+                  <div class="thumbnail">
+                    <img src="https://www.herramientastolsen.cl/wp-content/uploads/2016/10/MARTILLO-nuevo.jpg" class="img-circle">
+                    <div class="caption">
+                      <h3>Martillo</h3>
+                      <p>85 Bs.</p>
+                      <p>
+                        <a href="#" class="btn btn-primary" role="button" onclick="addToCart()">Añadir al Carrito</a>
+  <button id="cartButton">Carrito</button>                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fila">
+                <div class="row">
+                    <div class="col-sm-20 col-md-15">
+                      <div class="thumbnail">
+                        <img src="https://www.mndelgolfo.com/blog/wp-content/uploads/2017/08/llave-inglesa.jpg" class="img-circle">
+                        <div class="caption">
+                          <h3>llave-inglesa</h3>
+                          <p>50 Bs.</p>
+                          <p>
+                            <a href="#" class="btn btn-primary" role="button">Añadir al carrito</a>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="row">
+                    <div class="col-sm-20 col-md-15">
+                      <div class="thumbnail">
+                        <img src="https://www.dewalt.es/EMEA/PRODUCT/IMAGES/HIRES/DWHT62056-0/DWHT62056-0_1.jpg?resize=530x530" alt="...">
+                        <div class="caption">
+                          <h3>Juego de Detornilladores</h3>
+                          <p>145 Bs.</p>
+                          <p>
+                            <a href="#" class="btn btn-primary" role="button">Añadir al carrito</a>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-20 col-md-15">
+                      <div class="thumbnail">
+                        <img src="https://ggh-ecommerce.s3.us-east-2.amazonaws.com/imagenes/productos_detalles/2709103537_SKU-20-206I.jpg" class="img-circle">
+                        <div class="caption">
+                          <h3>cierra</h3>
+                          <p>45 Bs.</p>
+                          <p>
+                            <a href="#" class="btn btn-primary" role="button">Añadir Al Carrito</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fila">
+                    <div class="row">
+                        <div class="col-sm-20 col-md-15">
+                          <div class="thumbnail">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIHEhUSExEVEBIWEBkSGBgWGBgZGRgYFhgXFhcaFRcYIDQgGholHRMTIT0hJikrLi8uGh81ODMtOSguLisBCgoKDg0OGhAQGi0jIB02LTcrKy0rLS0uODcrNy0tLyswLS0tLS0tLy0tMi8rNys3NystKy0tLSs0LTctLS0uK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABAEAACAQMCBAQDBAcECwAAAAABAgADBBESIQUGMUETIlFhcYGRByMyQhQzUnKhscFikqLwFRYkU2NzgrLC0dL/xAAaAQEBAQADAQAAAAAAAAAAAAAAAQIDBAYF/8QAJhEBAAICAgEDAwUAAAAAAAAAAAERAgMEMSEFEkFRcfATImGBkf/aAAwDAQACEQMRAD8A7PERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERASE4lx/9FYqiLUYLq068OVzp1BACQmdtRxkg9t5JcSuDaUatQdUpO/8AdUn+k559lnEP9jvuJVsF2rNqb/h21FNC+uBloVcbHmi3uTpZvBfph9t/ZhsZhvOaktj5aNSsvcppJ/uk5+uJSeCFeKcOuOIXT4Rrl/BxgBKanwRtjck6ye/pjMqPDeZDeVKSUiV1so8Op5wushVZWyNgWXYEdekvhHZ7LnCyujpNYUX/AGKwNM/4tj8jJ1SGGQcg9COh+E4twGxvuZrNbqlTpVqbs48Nm0v5GK7avuyNpBrxu95RrEJ4lswOWo1AdDD9wnBB38yn5iB+holS5X5/teOUgzMKFUbPTOTg+oOPwn1MtNCulyMoyuPVSD/KY92N1flucMox91ePqyRMTXKI4pl1DsCwUkaiB1IXqRMs0wREQEREBERAREQEREBERAREQEREBERAREQPFekK6sh6MpU/AjB/nOP8uU24XbcX4bX+7JNWrTbIw3iJhlX0/AuM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" class="img-circle">
+                            <div class="caption">
+                              <h3>Motocierra</h3>
+                              <p> 350 Bs.</p>
+                              <p>
+                                <a href="#" class="btn btn-primary" role="button">Añadir al carrito</a>
+                                
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="row">
+                        <div class="col-sm-20 col-md-15">
+                          <div class="thumbnail">
+                            <img src="https://cdn.shopify.com/s/files/1/0503/6228/6229/products/B140024.jpg?v=1613582293" alt="...">
+                            <div class="caption">
+                              <h3>Casco de Seguridad</h3>
+                              <p>55 Bs.</p>
+                              <p>
+                                <a href="#" class="btn btn-primary" role="button">Añadir al carrito</a>
+                                
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-20 col-md-15">
+                          <div class="thumbnail">
+                            <img src="https://jumbo.com.do/pub/media/catalog/product/cache/e5145626c3f3275a7b4b1f65af9095fa/3/5/3594583-a.jpg" class="img-circle">
+                            <div class="caption">
+                              <h3>Esmeril</h3>
+                              <p>190 Bs.</p>
+                              <p>
+                                <a href="#" class="btn btn-primary" role="button">Añadir Al Carrito</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+        </div>
+        <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="productos.component.css">
+</head>
+<body>
+  <button id="cartButton" class="floating-button">
+    <i class="fa fa-shopping-cart"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    </body>
